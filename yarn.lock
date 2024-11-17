@@ -435,6 +435,14 @@
   dependencies:
     ckeditor5 "41.1.0"
 
+"@ckeditor/ckeditor5-html-support@41.1.0":
+  version "41.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-html-support/-/ckeditor5-html-support-41.1.0.tgz#9f4d1fe743a878a666036c4de9b013bc2e9358ed"
+  integrity sha512-55gNvu1a3hAkIQ4t0fajYqE9sTjqFf1oOrgV0X5uN+5p+XkjafZbTtqEPcaHg4rnoOM5bcQguXWz4PsS4v3gSg==
+  dependencies:
+    ckeditor5 "41.1.0"
+    lodash-es "4.17.21"
+
 "@ckeditor/ckeditor5-image@41.1.0":
   version "41.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-image/-/ckeditor5-image-41.1.0.tgz#27d947a57c1e70fd6dbb1b82c2063f78181766d5"

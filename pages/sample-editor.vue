@@ -4,7 +4,7 @@
   export default {
     data() {
       return {
-        editorInput: '<p class="test">test</p>',
+        editorInput: '<p>test  <span class="red">666</span></p>',
       };
     },
   };

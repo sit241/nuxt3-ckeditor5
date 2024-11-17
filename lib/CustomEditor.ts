@@ -40,6 +40,7 @@ import {
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { Undo } from '@ckeditor/ckeditor5-undo';
 import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
+import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -75,6 +76,7 @@ class Editor extends ClassicEditor {
     TableToolbar,
     TextTransformation,
     Undo,
+    GeneralHtmlSupport,
   ];
 
   public static override defaultConfig: EditorConfig = {
@@ -115,6 +117,16 @@ class Editor extends ClassicEditor {
         'mergeTableCells',
         'tableCellProperties',
         'tableProperties',
+      ],
+    },
+    htmlSupport: {
+      allow: [
+        {
+          name: /.*/,
+          attributes: true,
+          classes: true,
+          styles: true,
+        },
       ],
     },
   };
