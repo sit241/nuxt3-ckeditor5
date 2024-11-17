@@ -4,7 +4,7 @@
   export default {
     data() {
       return {
-        editorInput: '',
+        editorInput: '<p class="test">test</p>',
       };
     },
   };
@@ -12,7 +12,7 @@
 
 <template>
   <rich-editor
-    :value="editorInput"
+    v-model="editorInput"
     @input="(event) => (editorInput = event)"
   />
 
@@ -31,3 +31,9 @@
     </div>
   </div>
 </template>
+
+<style>
+  .test {
+    background-color: red;
+  }
+</style>
